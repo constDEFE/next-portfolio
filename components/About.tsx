@@ -56,6 +56,7 @@ const About = () => {
             draggable="false"
             className={styles.image}
             src={AboutIMG}
+            priority
             alt="/"
           />
         </div>

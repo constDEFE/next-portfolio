@@ -106,7 +106,7 @@ const Contact = () => {
           </div>
           <div className={styles.rightSide}>
             <div className={styles.rightSideContainer}>
-              <form method="POST" action={`${process.env.FORM_ACTION}`}>
+              <form method="POST" action='https://getform.io/f/8267831a-2ef3-48c0-a8f5-9576cfeba39b' target='_blank'>
                 <p className={styles.comment}>// Submit this form or shoot me an email</p>
                 <div className={styles.inputsContainer}>
                   <div className={styles.topInputWrapper}>
