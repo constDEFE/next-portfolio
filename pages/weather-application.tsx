@@ -59,6 +59,7 @@ const weather: FC = () => {
               href="https://react-weather-app-mu-three.vercel.app"
               target="_blank"
               className={styles.button}
+              rel="noreferrer"
             >
               Demo
             </a>
@@ -66,6 +67,7 @@ const weather: FC = () => {
               href="https://github.com/constDEFE/react-weather-app"
               target="_blank"
               className={styles.button}
+              rel="noreferrer"
             >
               Code
             </a>

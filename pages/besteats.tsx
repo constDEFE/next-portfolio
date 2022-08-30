@@ -27,7 +27,13 @@ const besteats: FC = () => {
   return (
     <section className={styles.section}>
       <div className={styles.imageContainer}>
-        <Image className={styles.image} src={BestEatsIMG} layout='fill' objectFit="cover" alt="/" />
+        <Image 
+          className={styles.image} 
+          src={BestEatsIMG} 
+          layout='fill' 
+          objectFit="cover" 
+          alt="/" 
+        />
         <div className={styles.imageOverlay} />
 
         <div className={styles.textContainer}>
@@ -44,8 +50,22 @@ const besteats: FC = () => {
             This site design was built using Tailwind CSS and JavaScript and is hosted on Vercel.
           </p>
           <div className={styles.buttonsContainer}>
-            <a href='https://best-eats-design.vercel.app/' target="_blank" className={styles.button}>Demo</a>
-            <a href='https://github.com/constDEFE/best-eats-design' target='_blank' className={styles.button}>Code</a>
+            <a 
+              href='https://best-eats-design.vercel.app/' 
+              target="_blank" 
+              rel="noreferrer" 
+              className={styles.button}
+            >
+              Demo
+            </a>
+            <a 
+              href='https://github.com/constDEFE/best-eats-design' 
+              target='_blank' 
+              rel='noreferrer' 
+              className={styles.button}
+            >
+              Code
+            </a>
           </div>
         </div>
         <div className={styles.techsContainer}>

@@ -28,7 +28,13 @@ const messenger: FC = () => {
   return (
     <section className={styles.section}>
       <div className={styles.imageContainer}>
-        <Image className={styles.image} src={MessengerIMG} layout='fill' objectFit="cover" alt="/" />
+        <Image 
+          className={styles.image} 
+          src={MessengerIMG} 
+          layout='fill' 
+          objectFit="cover" 
+          alt="/" 
+        />
         <div className={styles.imageOverlay} />
 
         <div className={styles.textContainer}>
@@ -56,8 +62,20 @@ const messenger: FC = () => {
             {"\tAbility to send, accept and decline friend requests.\n"}
           </p>
           <div className={styles.buttonsContainer}>
-            <a href='https://react-chat-app-beta-kohl.vercel.app/' target="_blank" className={styles.button}>Demo</a>
-            <a href='https://github.com/constDEFE/react-chat-app' target='_blank' className={styles.button}>Code</a>
+            <a href='https://react-chat-app-beta-kohl.vercel.app/' 
+              target="_blank" 
+              rel="noreferrer" 
+              className={styles.button}
+              >
+                Demo
+              </a>
+            <a href='https://github.com/constDEFE/react-chat-app' 
+              target='_blank' 
+              rel="noreferrer" 
+              className={styles.button}
+            >
+              Code
+            </a>
           </div>
         </div>
         <div className={styles.techsContainer}>

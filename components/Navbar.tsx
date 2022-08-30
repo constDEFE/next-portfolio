@@ -175,6 +175,7 @@ const Navbar = () => {
                   className={styles.mobileSource}
                   href="https://drive.google.com/file/d/19Gy6VtU9z6rgGKX23PbspCTB9-moSHpt/view?usp=sharing"
                   target='_blank'
+                  rel="noreferrer"
                 >
                   <BsFillPersonLinesFill size={30} />
                 </a>

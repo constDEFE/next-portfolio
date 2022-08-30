@@ -18,7 +18,7 @@ const Home: NextPage = () => {
     <div>
       <Head>
         <title>KG | Front-End Developer</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Next.js Portfolio Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
