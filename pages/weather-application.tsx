@@ -1,8 +1,7 @@
-import Image from "next/image";
-import Link from "next/link";
-import React, { FC } from "react";
 import { FaAngleRight } from "react-icons/fa";
-import WeatherIMG from "../public/assets/projects/react-weather-appPage.png";
+import React, { FC } from "react";
+import WeatherIMG from "../public/assets/webp/projects/react-weather-appPage.webp";
+import Image from "next/image";
 
 type Styles = { [key: string]: string };
 

@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import React, { FC } from 'react'
 import { FaAngleRight } from 'react-icons/fa'
-import MessengerIMG from '../public/assets/projects/MessengerPage.png'
+import MessengerIMG from '../public/assets/webp/projects/MessengerPage.webp'
+import React, { FC } from 'react'
+import Image from 'next/image'
 
 type Styles = { [key:string]: string };
 

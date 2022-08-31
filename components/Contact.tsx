@@ -1,7 +1,7 @@
 import { BsFillPersonLinesFill, BsTelegram } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
-import ContactIMG from "../public/assets/contact.jpg"
+import ContactIMG from "../public/assets/webp/contact.webp"
 import React from "react";
 import Image from "next/image";
 
@@ -123,7 +123,7 @@ const Contact = () => {
                       placeholder="Your name or the Company you represent...  "
                       id="name"
                       required
-                    />
+                    />``
                   </div>
                   <div className={styles.topInputWrapper}>
                     <label

@@ -1,4 +1,4 @@
-import AboutIMG from "../public/assets/about.jpg";
+import AboutIMG from "../public/assets/webp/about.webp";
 import Image from "next/image";
 import React from "react";
 

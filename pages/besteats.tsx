@@ -1,7 +1,7 @@
-import Image from "next/image";
-import React, { FC } from "react";
-import BestEatsIMG from "../public/assets/projects/BestEatsPage1.png";
 import { FaAngleRight } from 'react-icons/fa'
+import React, { FC } from "react";
+import BestEatsIMG from "../public/assets/webp/projects/BestEatsPage1.webp";
+import Image from "next/image";
 
 type Styles = { [key:string]: string };
 
