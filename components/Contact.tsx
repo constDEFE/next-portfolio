@@ -152,6 +152,7 @@ const Contact = () => {
                     className={styles.longInput}
                     type="email"
                     name="email"
+                    required
                     placeholder="your@email.com"
                     id="email"
                   />
