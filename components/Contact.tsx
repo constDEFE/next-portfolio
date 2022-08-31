@@ -7,32 +7,30 @@ import Image from "next/image";
 type Styles = { [key: string]: string };
 
 const styles: Styles = { 
-  section: "w-full lg:h-screen",
-  container: "max-w-[1240px] m-auto px-4 py-16 w-full",
-  sectionTitle: "text-xl tracking-widest uppercase text-[#5651e5]",
-  title: "py-4 text-[#1f2937] dark:text-[#ecf0f3]",
+  section: "section",
+  container: "container",
+  sectionTitle: "section-title",
+  title: "title",
   content: "grid lg:grid-cols-5 gap-8",
   leftSide: "col-span-3 lg:col-span-2 w-full h-full rounded-xl p-4 shadow-xl dark:shadow-slate-900 shadow-gray-500",
   leftSideColumn: "flex flex-col gap-8 md:gap-0 justify-between lg:p-4 h-full",
   imageContainer: "rounded-xl relative hover:scale-105 ease-in duration-200",
   image: "rounded-xl",
-  name: "py-2 text-[#1f2937] dark:text-[#ecf0f3]",
-  job: "dark:text-[#b6d0e4] text-[#1f2937]",
-  paragraph: "py-4 dark:text-[#afc7da] text-[#1f2937]",
+  name: "title",
+  job: "comment",
+  paragraph: "py-4 text",
   sourcesTitle: "uppercase pt-2 tracking-widest dark:text-[#ecf0f3] text-[#1f2937] font-medium",
   sourcesContainer: "flex items-center justify-between py-4",
-  source: `cursor-pointer rounded-full p-4 dark:bg-slate-800 shadow-md hover:shadow-lg dark:shadow-slate-900 shadow-slate-500 hover:shadow-[#5651e5]/50 bg-gray-200 hover:scale-110 ease-in duration-150 text-[#1f2937] dark:text-[#ecf0f3]`,
+  source: "p-4 dark:shadow-slate-900 source-button",
   rightSide: "col-span-3 w-full h-auto shadow-xl dark:shadow-slate-900 shadow-gray-500 rounded-xl p-4",
   rightSideContaier: "p-4",
-  comment: "dark:text-[#b6d0e4] text-[#1f2937]",
+  comment: "comment",
   inputsContainer: "grid md:grid-cols-2 gap-4 w-full py-2",
   topInputWrapper: "flex flex-col",
-  label: "uppercase text-[#1f2937] dark:text-[#ecf0f3] text-sm py-2 font-medium",
-  topInput: "border-2 bg-slate-200 rounded-lg p-3 flex border-slate-300 focus:outline-[#5651e5] dark:text-[#1f2937]",
+  label: "py-2",
   emailInputWrapper: "flex flex-col py-2",
-  longInput: "border-2 border-slate-300 rounded-lg bg-slate-200 p-3 focus:outline-[#5651e5] dark:text-[#1f2937]",
   longInputWrapper: "flex flex-col py-2",
-  textArea: "border-2 rounded-lg border-slate-300 bg-slate-200 p-3 border-gray-300 min-h-[120px] focus:outline-[#5651e5] dark:text-[#1f2937]",
+  textArea: "min-h-[120px]",
   button: "w-full p-4 text-gray-100 mt-4 dark:shadow-slate-800 hover:scale-[1.01] hover:shadow-[#5651e5]/20 duration-200 ease-in",
 }
 
@@ -59,7 +57,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h2 className={styles.name}>Konstantin</h2>
-                  <p className={styles.job}>// Front-End Developer</p>
+                  <p className={styles.job}>{"// Front-End Developer"}</p>
                   <p className={styles.paragraph}>
                     I'm available for freelance or full-time distant positions. Contact
                     me and let's talk.
@@ -108,7 +106,7 @@ const Contact = () => {
           <div className={styles.rightSide}>
             <div className={styles.rightSideContainer}>
               <form method="POST" action='https://getform.io/f/8267831a-2ef3-48c0-a8f5-9576cfeba39b' target='_blank'>
-                <p className={styles.comment}>// Submit this form or shoot me an email</p>
+                <p className={styles.comment}>{"// Submit this form or shoot me an email"}</p>
                 <div className={styles.inputsContainer}>
                   <div className={styles.topInputWrapper}>
                     <label

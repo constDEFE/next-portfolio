@@ -6,14 +6,14 @@ import React from "react";
 type Styles = { [key: string]: string };
 
 const styles: Styles = {
-  section: "w-full h-screen pt-20 text-center",
-  container: "container w-full h-full mx-auto p-4 flex justify-center items-center",
+  section: "section h-screen text-center",
+  container: "container mt-4 flex justify-center items-center",
   topText: "uppercase text-sm tracking-widest dark:text-[#ecf0f3] text-gray-600",
   title: "py-4 dark:text-[#b6d0e4] text-gray-700",
   secTitle: "dark:text-[#ecf0f3] text-[#1f2937] text-4xl sm:text-5xl md:text-6xl",
-  paragraph: "py-4 dark:text-[#afc7da] text-gray-600 max-w-[70%] mx-auto",
+  paragraph: "py-4 text max-w-[70%] mx-auto",
   sourceContainer: "flex items-center justify-between max-w-[330px] m-auto py-4",
-  source: `cursor-pointer rounded-full p-4 dark:bg-slate-800 shadow-md hover:shadow-lg dark:shadow-slate-900 shadow-slate-500 hover:shadow-[#5651e5]/50 bg-gray-200 hover:scale-110 ease-in duration-150 text-[#1f2937] dark:text-[#ecf0f3]`,
+  source: `p-4 dark:shadow-slate-900 source-button`,
 };
 
 const Hero = () => {

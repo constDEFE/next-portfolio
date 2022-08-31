@@ -19,10 +19,10 @@ const skillArray: Array<SkillType> = [
 ];
 
 const styles: Styles = {
-  section: "w-full lg:h-screen p-4",
-  container: "max-w-[1240px] mx-auto flex flex-col justify-center h-full",
-  sectionTitle: "uppercase text-xl tracking-widest text-[#5651e5]",
-  title: "py-4 text-[#1f2937] dark:text-[#ecf0f3]",
+  section: "section",
+  container: "container flex flex-col justify-center",
+  sectionTitle: "section-title",
+  title: "title",
   skillsContainer: "grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8",
 };
 

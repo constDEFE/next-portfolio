@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -9,26 +9,79 @@ html {
 
 @layer base {
   body {
-    @apply tracking-wide scroll-smooth font-jost dark:bg-[#1f2937] bg-[#ecf0f3] dark:text-[#ecf0f3] text-[#1f2937]
+    @apply tracking-wide scroll-smooth font-jost dark:bg-[#1f2937] bg-[#ecf0f3] dark:text-[#ecf0f3] text-[#1f2937];
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    @apply font-bold
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
   }
 
   h1 {
-    @apply text-4xl sm:text-5xl md:text-6xl
+    @apply text-4xl sm:text-5xl md:text-6xl;
   }
 
   h2 {
-    @apply text-3xl sm:text-4xl
+    @apply text-3xl sm:text-4xl;
   }
 
   button {
-    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white
+    @apply shadow-xl shadow-gray-400 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white;
   }
 
   span {
-    @apply text-[#5651e5]
+    @apply text-[#5651e5];
   }
+
+  label {
+    @apply uppercase text-[#1f2937] dark:text-[#ecf0f3] text-sm font-medium;
+  }
+
+  input {
+    @apply border-2 bg-slate-200 rounded-lg p-3 flex border-slate-300 focus:border-[#5651e5] focus:outline-none dark:text-[#1f2937];
+  }
+
+  textarea {
+    @apply border-2 bg-slate-200 rounded-lg p-3 flex border-slate-300 focus:border-[#5651e5] focus:outline-none dark:text-[#1f2937];
+  }
+}
+
+.section-title {
+  @apply uppercase text-xl tracking-widest text-[#5651e5];
+}
+
+.accent {
+  @apply text-[#5651e5];
+}
+
+.comment {
+  @apply text-emerald-500 dark:text-sky-500;
+}
+
+.source-button {
+  @apply rounded-full cursor-pointer dark:bg-slate-800 dark:shadow-slate-900 shadow-slate-500 hover:shadow-[#5651e5]/50 bg-gray-200 hover:scale-110 ease-in duration-150 text-[#1f2937] dark:text-[#ecf0f3] shadow-md hover:shadow-lg;
+}
+
+.text {
+  @apply dark:text-[#afc7da] text-[#1f2937];
+}
+
+.title {
+  @apply py-2 text-[#1f2937] dark:text-[#ecf0f3];
+}
+
+.section {
+  @apply w-full lg:h-screen px-4 py-16;
+}
+
+.container {
+  @apply max-w-[1240px] w-full h-full mx-auto
+}
+
+.logo {
+  @apply cursor-pointer text-[#1f2937] dark:text-[#ecf0f3]
 }

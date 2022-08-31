@@ -1,6 +1,7 @@
 import { FaAngleRight } from "react-icons/fa";
 import React, { FC } from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 type Styles = { [key: string]: string };
 
@@ -12,8 +13,9 @@ const styles: Styles = {
   textContainer: "absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] -translate-x-1/2 z-10 p-2 text-white",
   container: "max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8",
   overviewContainer: "col-span-4",
-  sectionTitle: "uppercase text-xl tracking-widest text-[#5651e5]",
-  title: "py-2",
+  sectionTitle: "section-title",
+  title: "py-2 title",
+  paragraph: "py-2 text",
   buttonsContainer: "flex gap-8",
   button: "px-8 py-2 mt-4 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white hover:scale-105 shadow-md hover:shadow-lg shadow-slate-400 dark:shadow-slate-900 hover:shadow-[#5651e5]/50 ease-in duration-150",
   techsContainer: "col-span-4 md:col-span-1 shadow-lg hover:shadow-xl shadow-slate-400 dark:shadow-slate-900 hover:shadow-[#5651e5]/60 rounded-xl p-4 hover:scale-105 duration-150 ease-in",
@@ -46,7 +48,7 @@ const weather: FC = () => {
         <div className={styles.overviewContainer}>
           <p className={styles.sectionTitle}>Project</p>
           <h2 className={styles.title}>Overview</h2>
-          <p>
+          <p className={styles.paragraph}>
             This app was built using React JS and is hosted on Vercel. Users are
             able to search for a City or click a Location Button to get detailed
             forecast for their location. Weather forecast also includes Hourly
