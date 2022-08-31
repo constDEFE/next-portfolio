@@ -53,9 +53,9 @@ const ProjectSlider = ({ projects }: ProjectSliderProps) => {
             <Image
               src={project.imageSource}
               className={styles.image}
-              draggable="false"
-              layout="fill"
+              layout='fill'
               objectFit="cover"
+              draggable="false"
               alt="/"
             />
           </div>

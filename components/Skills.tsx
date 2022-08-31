@@ -8,14 +8,14 @@ type SkillType = {
 };
 
 const skillArray: Array<SkillType> = [
-  { imageSource: "/../public/assets/webp/skills/html.webp", title: "HTML" },
-  { imageSource: "/../public/assets/webp/skills/css.webp", title: "CSS" },
-  { imageSource: "/../public/assets/webp/skills/javascript.webp", title: "JavaScript" },
-  { imageSource: "/../public/assets/webp/skills/typescript.webp", title: "TypeScript" },
-  { imageSource: "/../public/assets/webp/skills/react.webp", title: "ReactJS" },
-  { imageSource: "/../public/assets/webp/skills/tailwind.webp", title: "Tailwind CSS" },
-  { imageSource: "/../public/assets/webp/skills/github.webp", title: "GitHub" },
-  { imageSource: "/../public/assets/webp/skills/firebase.webp", title: "Firebase" },
+  { imageSource: "https://i.ibb.co/w6gVJW9/html.webp", title: "HTML" },
+  { imageSource: "https://i.ibb.co/6nNrzfJ/css.webp", title: "CSS" },
+  { imageSource: "https://i.ibb.co/tLxWFpq/javascript.webp", title: "JavaScript" },
+  { imageSource: "https://i.ibb.co/899pJc7/typescript.webp", title: "TypeScript" },
+  { imageSource: "https://i.ibb.co/M7h195L/react.webp", title: "ReactJS" },
+  { imageSource: "https://i.ibb.co/w4WHh7F/tailwind.webp", title: "Tailwind CSS" },
+  { imageSource: "https://i.ibb.co/kGPzwWf/github.webp", title: "GitHub" },
+  { imageSource: "https://i.ibb.co/h2xmzM0/firebase.webp", title: "Firebase" },
 ];
 
 const styles: Styles = {

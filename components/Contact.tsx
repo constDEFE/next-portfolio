@@ -1,7 +1,6 @@
 import { BsFillPersonLinesFill, BsTelegram } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
-import ContactIMG from "../public/assets/webp/contact.webp"
 import React from "react";
 import Image from "next/image";
 
@@ -15,7 +14,7 @@ const styles: Styles = {
   content: "grid lg:grid-cols-5 gap-8",
   leftSide: "col-span-3 lg:col-span-2 w-full h-full rounded-xl p-4 shadow-xl dark:shadow-slate-900 shadow-gray-500",
   leftSideColumn: "flex flex-col gap-8 md:gap-0 justify-between lg:p-4 h-full",
-  imageContainer: "rounded-xl hover:scale-105 ease-in duration-200",
+  imageContainer: "rounded-xl relative hover:scale-105 ease-in duration-200",
   image: "rounded-xl",
   name: "py-2 text-[#1f2937] dark:text-[#ecf0f3]",
   job: "dark:text-[#b6d0e4] text-[#1f2937]",
@@ -52,7 +51,9 @@ const Contact = () => {
                 <div className={styles.imageContainer}>
                   <Image
                     className={styles.image}
-                    src={ContactIMG}
+                    src="https://i.ibb.co/1rstw46/contact.webp"
+                    width={1024}
+                    height={696}
                     alt="/"
                   />
                 </div>
@@ -123,7 +124,7 @@ const Contact = () => {
                       placeholder="Your name or the Company you represent...  "
                       id="name"
                       required
-                    />``
+                    />
                   </div>
                   <div className={styles.topInputWrapper}>
                     <label

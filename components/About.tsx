@@ -1,4 +1,3 @@
-import AboutIMG from "../public/assets/webp/about.webp";
 import Image from "next/image";
 import React from "react";
 
@@ -13,7 +12,7 @@ const styles: Styles = {
   comment: "py-2 text-gray-600 dark:text-[#b6d0e4]",
   paragraph: "py-2 text-gray-600 dark:text-[#afc7da]",
   link: "underline py-2 text-gray-600 dark:text-[#ecf0f3] cursor-pointer",
-  imageContainer: "w-full h-auto mt-4 m-auto shadow-lg hover:shadow-xl dark:shadow-slate-900 shadow-slate-500 rounded-xl hover:shadow-[#5651e5]/60 md:flex items-center justify-center p-4 hover:scale-[1.02] ease-in duration-150",
+  imageContainer: "w-full relative h-auto mt-4 m-auto shadow-lg hover:shadow-xl dark:shadow-slate-900 shadow-slate-500 rounded-xl hover:shadow-[#5651e5]/60 md:flex items-center justify-center p-4 hover:scale-[1.02] ease-in duration-150",
   image: "rounded-xl",
 };
 
@@ -55,7 +54,9 @@ const About = () => {
           <Image
             draggable="false"
             className={styles.image}
-            src={AboutIMG}
+            src="https://i.ibb.co/xFnFL1v/about.webp"
+            width={800}
+            height={1300}
             priority
             alt="/"
           />

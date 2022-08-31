@@ -1,5 +1,4 @@
 import { FaAngleRight } from 'react-icons/fa'
-import MessengerIMG from '../public/assets/webp/projects/MessengerPage.webp'
 import React, { FC } from 'react'
 import Image from 'next/image'
 
@@ -30,10 +29,11 @@ const messenger: FC = () => {
       <div className={styles.imageContainer}>
         <Image 
           className={styles.image} 
-          src={MessengerIMG} 
+          src="https://i.ibb.co/YZ8505g/Messenger-Page.webp" 
           layout='fill' 
           objectFit="cover" 
           alt="/" 
+          priority
         />
         <div className={styles.imageOverlay} />
 

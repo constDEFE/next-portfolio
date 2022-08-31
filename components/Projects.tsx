@@ -12,19 +12,19 @@ export type ProjectType = {
 
 const projects: Array<ProjectType> = [
   {
-    imageSource: "/../public/assets/webp/projects/react-weather-app.webp",
+    imageSource: "https://i.ibb.co/3cCNsHZ/weather-application-Page.webp",
     title: "Weather Application",
     url: "weather-application",
     mainStack: ["ReactJS", "Rapid API"],
   },
   {
-    imageSource: "/../public/assets/webp/projects/BestEats.webp",
+    imageSource: "https://i.ibb.co/kctwkqr/BestEats.webp",
     title: "BestEats",
     url: "besteats",
     mainStack: ["HTML", "Tailwind CSS"],
   },
   {
-    imageSource: "/../public/assets/webp/projects/Messenger.webp",
+    imageSource: "https://i.ibb.co/m8bSyN1/Messenger.webp",
     title: "Messenger",
     url: "messenger-application",
     mainStack: ["ReactJS", "Tailwind CSS", "Firebase"],

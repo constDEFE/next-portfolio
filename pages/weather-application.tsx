@@ -1,6 +1,5 @@
 import { FaAngleRight } from "react-icons/fa";
 import React, { FC } from "react";
-import WeatherIMG from "../public/assets/webp/projects/react-weather-appPage.webp";
 import Image from "next/image";
 
 type Styles = { [key: string]: string };
@@ -29,10 +28,11 @@ const weather: FC = () => {
       <div className={styles.imageContainer}>
         <Image
           className={styles.image}
-          src={WeatherIMG}
+          src={"https://i.ibb.co/3cCNsHZ/weather-application-Page.webp"}
           layout="fill"
           objectFit="cover"
           alt="/"
+          priority
         />
         <div className={styles.imageOverlay} />
 

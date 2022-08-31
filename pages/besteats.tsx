@@ -1,6 +1,5 @@
 import { FaAngleRight } from 'react-icons/fa'
 import React, { FC } from "react";
-import BestEatsIMG from "../public/assets/webp/projects/BestEatsPage1.webp";
 import Image from "next/image";
 
 type Styles = { [key:string]: string };
@@ -29,10 +28,11 @@ const besteats: FC = () => {
       <div className={styles.imageContainer}>
         <Image 
           className={styles.image} 
-          src={BestEatsIMG} 
+          src="https://i.ibb.co/6R3g4YL/Best-Eats-Page.webp" 
           layout='fill' 
           objectFit="cover" 
           alt="/" 
+          priority
         />
         <div className={styles.imageOverlay} />
 
