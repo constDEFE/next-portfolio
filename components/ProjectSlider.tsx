@@ -10,7 +10,7 @@ import {
 type ProjectSliderProps = { projects: Array<ProjectType> };
 
 const styles = {
-  container: "h-[300px] lg:h-[600px] p-3 shadow-xl dark:shadow-slate-900 shadow-slate-500 rounded-3xl hover:scale-[1.01] duration-200 ease-in",
+  container: "h-[300px] lg:h-[600px] p-3 shadow-xl dark:shadow-slate-900 shadow-slate-500 border border-slate-200 dark:border-[#1c2736] rounded-3xl hover:scale-[1.01] duration-200 ease-in",
   content: "h-full relative group",
   image: "rounded-3xl select-none",
   panel: "absolute scale-[1.001] bg-gradient-to-t w-full flex flex-col items-center justify-end pb-[90px] sm:pb-[80px] lg:pb-[150px] h-full rounded-3xl from-black to-transparent top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2",

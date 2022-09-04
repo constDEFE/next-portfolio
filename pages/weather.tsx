@@ -1,8 +1,9 @@
-import { FaAngleRight } from 'react-icons/fa'
-import React, { FC } from 'react'
-import Image from 'next/image'
+import { FaAngleRight } from "react-icons/fa";
+import React, { FC } from "react";
+import Image from "next/image";
+import Link from "next/link";
 
-type Styles = { [key:string]: string };
+type Styles = { [key: string]: string };
 
 const styles: Styles = {
   section: "w-full",
@@ -13,68 +14,59 @@ const styles: Styles = {
   container: "max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8",
   overviewContainer: "col-span-4",
   sectionTitle: "section-title",
-  title: "py-2",
-  paragraph: "whitespace-pre-line py-2 text",
+  title: "py-2 title",
+  paragraph: "py-2 text",
   buttonsContainer: "flex gap-8",
-  button: "px-8 py-2 mt-4 rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white select-none hover:scale-105 shadow-md hover:shadow-lg shadow-slate-400 dark:shadow-slate-900 hover:shadow-[#5651e5]/50 ease-in duration-150",
-  techsContainer: "col-span-4 md:col-span-1 shadow-lg hover:shadow-xl shadow-slate-400 dark:shadow-slate-900 hover:shadow-[#5651e5]/60 rounded-xl p-4 hover:scale-105 duration-150 ease-in",
+  button: "px-8 py-2 mt-4 border border-[#709dff] dark:border-[#5651e5] rounded-xl uppercase bg-gradient-to-r from-[#5651e5] to-[#709dff] text-white select-none hover:scale-105 shadow-md hover:shadow-lg shadow-slate-400 dark:shadow-slate-900 hover:shadow-[#5651e5]/50 ease-in duration-150",  
+  techsContainer: "col-span-4 md:col-span-1 border border-slate-200 dark:border-[#1c2736] shadow-lg hover:shadow-xl shadow-slate-400 dark:shadow-slate-900 hover:shadow-[#5651e5]/60 rounded-xl p-4 hover:scale-105 duration-150 ease-in",
   techsTitle: "text-center font-bold",
   techContainer: "text-slate-700 dark:text-slate-400 py-2 flex items-center gap-1",
-  tech: "hover:scale-105 ease-in duration-100 font-medium cursor-default"
-}
+  tech: "hover:scale-105 ease-in duration-100 font-medium cursor-default",
+};
 
-const messenger: FC = () => {
+const weather: FC = () => {
   return (
     <section className={styles.section}>
       <div className={styles.imageContainer}>
-        <Image 
-          className={styles.image} 
-          src="https://i.ibb.co/YZ8505g/Messenger-Page.webp" 
-          layout='fill' 
-          objectFit="cover" 
-          alt="/" 
+        <Image
+          className={styles.image}
+          src={"https://i.ibb.co/3cCNsHZ/weather-application-Page.webp"}
+          layout="fill"
+          objectFit="cover"
+          alt="/"
           priority
         />
         <div className={styles.imageOverlay} />
-
         <div className={styles.textContainer}>
-          <h2>Messenger</h2>
-          <h3>ReactJS | Tailwind CSS | Firebase</h3>
+          <h2>Weather App</h2>
+          <h3>JavaScript | ReactJS | Tailwind CSS</h3>
         </div>
       </div>
-
       <div className={styles.container}>
         <div className={styles.overviewContainer}>
           <p className={styles.sectionTitle}>Project</p>
           <h2 className={styles.title}>Overview</h2>
           <p className={styles.paragraph}>
-            {"Unfortunately, this project doesn't include Responsive design.\n"}
-            {"It was built using ReactJS, Tailwind CSS and Google Firebase.\n"}
-          </p>
-          <p className={styles.paragraph}>
-            {"Project includes:\n"}
-            {"\tRegistration Page. [ Email | Login | Password ]\n"}
-            {"\tLogin Page. [ Email | Password ]\n"}
-            {"\tProfile Page.\n"}
-            {"\tChat Page. [ Only friendlist users are shown ]\n"}
-            {"\tAbility to change their profile image.\n"}
-            {"\tAbility to send images in chat.\n"}
-            {"\tAbility search other users. [ Login ]\n"}
-            {"\tAbility to send images in chat.\n"}
-            {"\tAbility to send, accept and decline friend requests.\n"}
+            This app was built using React JS and is hosted on Vercel. Users are
+            able to search for a City or click a Location Button to get detailed
+            forecast for their location. Weather forecast also includes Hourly
+            and Daily weather. This is made possible with Rapid GeoDB and
+            OpenWeather APIs.
           </p>
           <div className={styles.buttonsContainer}>
-            <a href='https://react-chat-app-beta-kohl.vercel.app/' 
-              target="_blank" 
-              rel="noreferrer" 
+            <a
+              href="https://react-weather-app-mu-three.vercel.app"
+              target="_blank"
               className={styles.button}
-              >
-                Demo
-              </a>
-            <a href='https://github.com/constDEFE/react-chat-app' 
-              target='_blank' 
-              rel="noreferrer" 
+              rel="noreferrer"
+            >
+              Demo
+            </a>
+            <a
+              href="https://github.com/constDEFE/react-weather-app"
+              target="_blank"
               className={styles.button}
+              rel="noreferrer"
             >
               Code
             </a>
@@ -99,13 +91,16 @@ const messenger: FC = () => {
               <FaAngleRight /> <p className={styles.tech}>ReactJS</p>
             </li>
             <li className={styles.techContainer}>
-              <FaAngleRight /> <p className={styles.tech}>Firebase</p>
+              <FaAngleRight /> <p className={styles.tech}>Rapid API</p>
+            </li>
+            <li className={styles.techContainer}>
+              <FaAngleRight /> <p className={styles.tech}>OpenWeather API</p>
             </li>
           </ul>
         </div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default messenger
+export default weather;

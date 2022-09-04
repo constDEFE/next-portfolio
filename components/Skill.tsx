@@ -8,7 +8,7 @@ type SkillProps = {
 };
 
 const styles: Styles = {
-  container: "p-6 dark:shadow-slate-900 shadow-lg shadow-slate-400/60 rounded-xl hover:shadow-[#5651e5]/40 hover:shadow-xl hover:scale-105 ease-in duration-200",
+  container: "p-6 dark:shadow-slate-900 border border-slate-200 dark:border-[#1c2736] shadow-lg shadow-slate-400/60 rounded-xl hover:shadow-[#5651e5]/40 hover:shadow-xl hover:scale-105 ease-in duration-200",
   content: "grid grid-cols-2 gap-4 justify-center items-center",
   imageContainer: "relative m-auto flex",
   titleContainer: "flex flex-col items-center justify-center",

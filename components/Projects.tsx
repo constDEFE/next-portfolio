@@ -12,9 +12,15 @@ export type ProjectType = {
 
 const projects: Array<ProjectType> = [
   {
+    imageSource: "https://i.ibb.co/Bnfjc6S/cryptocurrency.webp",
+    title: "Cryptocurrency App",
+    url: "cryptocurrency",
+    mainStack: ["ReactJS", "Firebase", "CoinGecko API"]
+  },
+  {
     imageSource: "https://i.ibb.co/3cCNsHZ/weather-application-Page.webp",
-    title: "Weather Application",
-    url: "weather-application",
+    title: "Weather App",
+    url: "weather",
     mainStack: ["ReactJS", "Rapid API"],
   },
   {
@@ -26,7 +32,7 @@ const projects: Array<ProjectType> = [
   {
     imageSource: "https://i.ibb.co/m8bSyN1/Messenger.webp",
     title: "Messenger",
-    url: "messenger-application",
+    url: "messenger",
     mainStack: ["ReactJS", "Tailwind CSS", "Firebase"],
   },
 ];

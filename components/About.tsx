@@ -12,7 +12,7 @@ const styles: Styles = {
   comment: "py-2 comment",
   paragraph: "py-2 text",
   link: "underline py-2 text-gray-600 dark:text-[#ecf0f3] cursor-pointer",
-  imageContainer: "w-full relative h-auto mt-4 m-auto shadow-lg hover:shadow-xl dark:shadow-slate-900 shadow-slate-500 rounded-xl hover:shadow-[#5651e5]/60 md:flex items-center justify-center p-4 hover:scale-[1.02] ease-in duration-150",
+  imageContainer: "w-full relative border border-slate-200 dark:border-[#1c2736] h-auto mt-4 m-auto shadow-lg hover:shadow-xl dark:shadow-slate-900 shadow-slate-500 rounded-xl hover:shadow-[#5651e5]/60 md:flex items-center justify-center p-4 hover:scale-[1.02] ease-in duration-150",
   image: "rounded-xl",
 };
 
