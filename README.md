@@ -6,6 +6,5 @@ This is the source code of my Next.js Portfolio.
 
 - HTML and CSS for structure.
 - Tailwind CSS for design. 
-- TypeScript and ReactJS as Front-End.
-- Next.js as Back-End.
+- TypeScript, ReactJS and Next.js as Front-End.
 - GetForm.io as form Back-End tool.
