@@ -61,7 +61,7 @@ const cryptocurrency: FC = () => {
             {"\tResponsive Design.\n"}
           </p>
           <div className={styles.buttonsContainer}>
-            <a href='https://react-chat-app-beta-kohl.vercel.app/' 
+            <a href='https://react-cryptocurrency-one.vercel.app/' 
               target="_blank" 
               rel="noreferrer" 
               className={styles.button}
