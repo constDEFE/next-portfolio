@@ -1,6 +1,6 @@
 # Next.js Portfolio
 
-This is the source code of my Next.js Portfolio.
+Next.js Portfolio includes my skills, projects and a bit about me as a person.
 
 ## Tech Stack
 
