@@ -1,12 +1,13 @@
-import { ThemeContext, ThemeType } from "./../contexts/ThemeContext";
+import { ThemeContext } from "./../contexts/ThemeContext";
 import { useContext } from "react";
+import { ThemeType } from './../models/models';
 
-type UseThemeType = {
+interface UseTheme {
   theme: ThemeType;
   toggleTheme: (newTheme: ThemeType) => void;
 };
 
-export const useTheme = (): UseThemeType => {
+export const useTheme = (): UseTheme => {
   const { theme, setTheme } = useContext(ThemeContext);
   const toggleTheme = (newTheme: ThemeType): void => setTheme(theme === "dark" ? "light" : "dark");
 

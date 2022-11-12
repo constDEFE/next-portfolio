@@ -2,7 +2,6 @@ import { FaAngleRight } from "react-icons/fa";
 import React, { FC } from "react";
 import { Style } from "../models/models";
 import Image from "next/image";
-import Link from "next/link";
 
 const styles: Style = {
   section: "w-full",
