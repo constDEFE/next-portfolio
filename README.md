@@ -1,3 +1,3 @@
 # Next.js Portfolio
 
-My Next.js portfolio.
+Next.js Portfolio includes my skills, projects and a bit about me as a person.
