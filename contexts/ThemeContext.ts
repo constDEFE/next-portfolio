@@ -1,12 +1,11 @@
+import { ThemeType } from "../models/models";
 import { 
   SetStateAction, 
   createContext, 
   Dispatch
 } from "react";
 
-export type ThemeType = "light" | "dark";
-
-interface IThemeContext {
+interface ThemeContextState {
   theme: ThemeType;
   setTheme: Dispatch<SetStateAction<ThemeType>>;
 }
@@ -27,4 +26,4 @@ const defaultState = {
   setTheme: () => {},
 };
 
-export const ThemeContext = createContext<IThemeContext>(defaultState);
+export const ThemeContext = createContext<ThemeContextState>(defaultState);

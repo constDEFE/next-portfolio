@@ -1,9 +1,8 @@
+import { Style } from "../models/models";
 import Image from "next/image";
 import React from "react";
 
-type Styles = { [key: string]: string };
-
-const styles: Styles = {
+const styles: Style = {
   section: "section flex items-center",
   container: "container md:grid grid-cols-3 gap-8",
   textContainer: "col-span-2 w-full h-full",
@@ -12,7 +11,7 @@ const styles: Styles = {
   comment: "py-2 comment",
   paragraph: "py-2 text",
   link: "underline py-2 text-gray-600 dark:text-[#ecf0f3] cursor-pointer",
-  imageContainer: "w-full relative border border-slate-200 dark:border-[#1c2736] h-auto mt-4 m-auto shadow-lg hover:shadow-xl dark:shadow-slate-900 shadow-slate-500 rounded-xl hover:shadow-[#5651e5]/60 md:flex items-center justify-center p-4 hover:scale-[1.02] ease-in duration-150",
+  imageContainer: "w-full relative h-auto mt-4 m-auto rounded-div md:flex items-center justify-center p-4 hover:scale-[1.01] transition-lg",
   image: "rounded-xl",
 };
 

@@ -1,11 +1,10 @@
 import { BsFillPersonLinesFill, BsTelegram } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
+import { Style } from "../models/models";
 import React from "react";
 
-type Styles = { [key: string]: string };
-
-const styles: Styles = {
+const styles: Style = {
   section: "section h-screen text-center",
   container: "container mt-4 flex justify-center items-center",
   topText: "uppercase text-sm tracking-widest dark:text-[#ecf0f3] text-gray-600",

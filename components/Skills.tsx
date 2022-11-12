@@ -1,24 +1,19 @@
+import { Skill as ISkill, Style } from "../models/models";
 import React from "react";
 import Skill from "./Skill";
 
-type Styles = { [key: string]: string };
-type SkillType = {
-  imageSource: string;
-  title: string;
-};
-
-const skillArray: Array<SkillType> = [
+const skillArray: ISkill[] = [
   { imageSource: "https://i.ibb.co/w6gVJW9/html.webp", title: "HTML" },
   { imageSource: "https://i.ibb.co/6nNrzfJ/css.webp", title: "CSS" },
   { imageSource: "https://i.ibb.co/tLxWFpq/javascript.webp", title: "JavaScript" },
   { imageSource: "https://i.ibb.co/899pJc7/typescript.webp", title: "TypeScript" },
   { imageSource: "https://i.ibb.co/M7h195L/react.webp", title: "ReactJS" },
+  { imageSource: "https://i.ibb.co/f1hJc3Q/redux.webp", title: "Redux Toolkit" },
   { imageSource: "https://i.ibb.co/w4WHh7F/tailwind.webp", title: "Tailwind CSS" },
-  { imageSource: "https://i.ibb.co/kGPzwWf/github.webp", title: "GitHub" },
   { imageSource: "https://i.ibb.co/h2xmzM0/firebase.webp", title: "Firebase" },
 ];
 
-const styles: Styles = {
+const styles: Style = {
   section: "section",
   container: "container flex flex-col justify-center",
   sectionTitle: "section-title",

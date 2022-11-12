@@ -7,12 +7,6 @@ import About from "../components/About";
 import Hero from "../components/Hero";
 import Head from "next/head";
 
-type Styles = { [key: string]: string };
-
-const styles: Styles = {
-  main: "dark:bg-[#1f2937] bg-[#ecf0f3]",
-}
-
 const Home: NextPage = () => {
   return (
     <div>
@@ -21,7 +15,7 @@ const Home: NextPage = () => {
         <meta name="description" content="Next.js Portfolio Website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styles.main}>
+      <main>
         <Hero />
         <About />
         <Skills />

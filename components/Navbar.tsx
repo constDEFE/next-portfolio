@@ -3,6 +3,7 @@ import { RiMoonClearFill } from "react-icons/ri";
 import { MdWbSunny } from "react-icons/md";
 import { useTheme } from "../hooks/useTheme";
 import { FaGithub } from "react-icons/fa";
+import { Style } from "../models/models";
 import Link from "next/link";
 import { 
   AiOutlineClose, 
@@ -15,30 +16,28 @@ import React, {
   useState 
 } from "react";
 
-type Styles = { [key: string]: string };
-
-const styles: Styles = {
+const styles: Style = {
   nav: `fixed w-full h-20 shadow-xl z-[100] bg-gradient-to-t from-[#ecf0f3]/30 to-[#ecf0f3]/75 dark:from-[#1f2937]/30 backdrop-blur-sm dark:to-[#1f2937]/95`,
   navContainer: "navbar flex justify-between items-center w-full h-full px-4 2xl:px-16 border-b border-slate-400/20 dark:border-slate-800/10",
   logo: `logo`,
   linksContainer: `hidden text-[#1f2937}] dark:text-[#ecf0f3] md:flex items-center gap-8`,
-  link: `cursor-pointer hover:scale-105 py-2 px-2 duration-100 ease-in border-b-[#1f2937]`,
+  link: `cursor-pointer hover:scale-105 py-2 px-2 transition-sm border-b-[#1f2937]`,
   buttonsContainer: "flex items-center justify-center gap-8",
-  themeButton: `flex items-center justify-center cursor-pointer rounded-full border border-slate-300 dark:border-[#1a2b35] p-2 dark:bg-slate-800 shadow-md hover:shadow-lg dark:shadow-slate-900 shadow-slate-500 hover:shadow-[#5651e5]/50 bg-gray-200 hover:scale-110 ease-in duration-150 text-[#1f2937] dark:text-[#ecf0f3]`,
+  themeButton: `flex items-center justify-center cursor-pointer rounded-full border border-slate-300 dark:border-[#1a2b35] p-2 dark:bg-slate-800 shadow-md hover:shadow-lg dark:shadow-slate-900 shadow-slate-500 hover:shadow-[#5651e5]/50 bg-gray-200 hover:scale-110 transition-md text-[#1f2937] dark:text-[#ecf0f3]`,
   mobileButton: "md:hidden cursor-pointer dark:text-[#ecf0f3]",
   mobileHeader: "flex w-full items-center justify-between",
-  mobileCloseButton: `flex items-center justify-center cursor-pointer rounded-full p-2 dark:bg-slate-800 shadow-md hover:shadow-lg dark:shadow-slate-900 shadow-slate-500 hover:shadow-[#5651e5]/75 bg-gray-200 hover:scale-110 ease-in duration-150 text-[#1f2937] dark:text-[#ecf0f3]`,
+  mobileCloseButton: `flex items-center justify-center cursor-pointer rounded-full p-2 dark:bg-slate-800 shadow-md hover:shadow-lg dark:shadow-slate-900 shadow-slate-500 hover:shadow-[#5651e5]/75 bg-gray-200 hover:scale-110 transition-md text-[#1f2937] dark:text-[#ecf0f3]`,
   mobilePhraseContainer: "border-b border-gray-300 my-4",
   mobilePhrase: "w-[85%] md:w-[90%] py-4 dark:text-[#ecf0f3]",
   mobileContent: "py-4 flex flex-col",
   mobileLinksContainer: "uppercase",
-  mobileLink: "py-4 cursor-pointer tracking-widest duration-100 ease-in text-[#1f2937] dark:text-[#ecf0f3] hover:translate-x-2",
+  mobileLink: "py-4 cursor-pointer tracking-widest transition-sm text-[#1f2937] dark:text-[#ecf0f3] hover:translate-x-2",
   breakLine: "bg-gray-400 border-gray-400 w-[30%]",
   mobileBottom: "mt-40",
   mobileSourcesTitle: "uppercase tracking-widest accent",
   mobileSourcesContainer: "flex items-center justify-between my-4 w-full sm:w-[80%]",
   mobileSource: `p-[10px] dark:shadow-slate-900 hover:shadow-[#5651e5]/75 source-button`,
-  showBG: "mobile-navbar-bg dark:text-[#ecf0f3] fixed md:hidden left-0 top-0 w-full h-screen bg-black/70 duration-200",
+  showBG: "mobile-navbar-bg dark:text-[#ecf0f3] fixed md:hidden left-0 top-0 w-full h-screen bg-black/70 transition-md",
   hideBG: "",
   showMenu: `mobile-navbar fixed left-[0] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#1f2937] bg-[#ecf0f3] py-5 px-4 duration-[250ms]`,
   hideMenu: "mobile-navbar fixed left-[-100%] top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen dark:bg-[#1f2937] bg-[#ecf0f3] py-5 px-4 duration-[250ms]",

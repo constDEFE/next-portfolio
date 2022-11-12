@@ -1,27 +1,19 @@
+import { Project, Style } from "../models/models";
 import ProjectSlider from "./ProjectSlider";
 import React from "react";
 
-type Styles = { [key: string]: string };
-
-export type ProjectType = {
-  imageSource: string;
-  title: string;
-  url: string;
-  mainStack: Array<string>;
-};
-
-const projects: Array<ProjectType> = [
+const projects: Project[] = [
   {
     imageSource: "https://i.ibb.co/Bnfjc6S/cryptocurrency.webp",
-    title: "Cryptocurrency App",
+    title: "Cryptocurrency Ranking",
     url: "cryptocurrency",
     mainStack: ["ReactJS", "Firebase", "CoinGecko API"]
   },
   {
     imageSource: "https://i.ibb.co/3cCNsHZ/weather-application-Page.webp",
-    title: "Weather App",
+    title: "Weather Forecast",
     url: "weather",
-    mainStack: ["ReactJS", "Rapid API"],
+    mainStack: ["ReactJS", "OpenWeather API", "Rapid API"],
   },
   {
     imageSource: "https://i.ibb.co/kctwkqr/BestEats.webp",
@@ -33,11 +25,11 @@ const projects: Array<ProjectType> = [
     imageSource: "https://i.ibb.co/m8bSyN1/Messenger.webp",
     title: "Messenger",
     url: "messenger",
-    mainStack: ["ReactJS", "Tailwind CSS", "Firebase"],
+    mainStack: ["ReactJS", "Redux Toolkit", "Firebase"],
   },
 ];
 
-const styles: Styles = {
+const styles: Style = {
   section: "section",
   container: "container flex justify-center items-center",
   textContainer: "w-full h-full",

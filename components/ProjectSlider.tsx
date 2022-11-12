@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ProjectType } from "./Projects";
+import { Project, Style } from "../models/models";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -7,18 +7,20 @@ import {
   HiOutlineArrowNarrowRight,
 } from "react-icons/hi";
 
-type ProjectSliderProps = { projects: Array<ProjectType> };
+interface ProjectSliderProps { 
+  projects: Project[] 
+};
 
-const styles = {
-  container: "h-[300px] lg:h-[600px] p-3 shadow-xl dark:shadow-slate-900 shadow-slate-500 border border-slate-200 dark:border-[#1c2736] rounded-3xl hover:scale-[1.01] duration-200 ease-in",
+const styles: Style = {
+  container: "h-[400px] lg:h-[600px] p-3 rounded-div shadow-xl shadow-slate-400 rounded-3xl hover:scale-[1.01] transition-lg",
   content: "h-full relative group",
   image: "rounded-3xl select-none",
   panel: "absolute scale-[1.001] bg-gradient-to-t w-full flex flex-col items-center justify-end pb-[90px] sm:pb-[80px] lg:pb-[150px] h-full rounded-3xl from-black to-transparent top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2",
   panelTitle: "text-xl sm:text-2xl py-2 sm:py-0 text-white tracking-wider text-center",
   panelMainTechs: "hidden sm:block pb-4 pt-2 text-white text-center",
-  panelButton: "text-center duration-150 ease-in py-1 px-2 sm:py-2 sm:px-8 rounded-lg hover:bg-[#5651e5] hover:text-white bg-white text-gray-700 font-bold text-lg cursor-pointer",
-  leftArrow: "group-hover:opacity-100 opacity-0 rounded-full p-1 shadow-slate-600 bg-white hover:scale-110 duration-200 hover:shadow-[#5651e5]/50 hover:shadow-lg shadow-md top-2/3 -translate-y-2/3 absolute cursor-pointer left-8",
-  rightArrow: "group-hover:opacity-100 opacity-0 rounded-full p-1 shadow-slate-600 bg-white hover:scale-110 duration-200 hover:shadow-[#5651e5]/50 hover:shadow-lg shadow-md top-2/3 -translate-y-2/3 absolute cursor-pointer right-8",
+  panelButton: "text-center transition-sm py-1 px-2 sm:py-2 sm:px-8 rounded-lg hover:bg-[#5651e5] hover:text-white bg-white text-gray-700 font-bold text-lg cursor-pointer",
+  leftArrow: "group-hover:opacity-100 opacity-0 rounded-full p-1 shadow-slate-600 bg-white hover:scale-110 transition-sm hover:shadow-[#5651e5]/50 hover:shadow-lg shadow-md top-2/3 -translate-y-2/3 absolute cursor-pointer left-8",
+  rightArrow: "group-hover:opacity-100 opacity-0 rounded-full p-1 shadow-slate-600 bg-white hover:scale-110 transition-sm hover:shadow-[#5651e5]/50 hover:shadow-lg shadow-md top-2/3 -translate-y-2/3 absolute cursor-pointer right-8",
   arrow: "accent",
   slide: "w-full h-full absolute ease-in-out duration-[400ms] opacity-0",
   activeSlide: "w-full h-full absolute ease-in-out duration-[400ms] opacity-1",

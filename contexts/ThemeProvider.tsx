@@ -1,19 +1,17 @@
-import { ThemeContext, ThemeType } from "./ThemeContext";
+import { ThemeContext } from "./ThemeContext";
+import { ThemeType } from "../models/models";
 import { 
   ReactNode, 
   useEffect, 
   useState 
 } from "react";
 
-interface IThemeProviderProps {
+interface ThemeProviderProps {
   initialTheme: ThemeType;
   children: ReactNode;
 }
 
-export const ThemeProvider = ({
-  initialTheme,
-  children,
-}: IThemeProviderProps) => {
+export const ThemeProvider = ({initialTheme, children}: ThemeProviderProps) => {
   const [theme, setTheme] = useState<ThemeType>(initialTheme);
 
   const checkTheme = (existingTheme: ThemeType): void => {

@@ -3,11 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     @apply tracking-wide scroll-smooth font-jost dark:bg-[#1f2937] bg-[#ecf0f3] dark:text-[#ecf0f3] text-[#1f2937];
   }
@@ -48,40 +48,60 @@ html {
   textarea {
     @apply border-2 bg-slate-200 rounded-lg p-3 flex border-slate-300 focus:border-[#5651e5] focus:outline-none dark:text-[#1f2937];
   }
+  
+  .section {
+    @apply w-full lg:h-screen px-4 py-16;
+  }
+  
+  .container {
+    @apply max-w-[1240px] w-full h-full mx-auto
+  }
 }
 
-.section-title {
-  @apply uppercase text-xl tracking-widest text-[#5651e5];
+@layer components {
+  .section-title {
+    @apply uppercase text-xl tracking-widest text-[#5651e5];
+  }
+
+  .source-button {
+    @apply rounded-full cursor-pointer dark:bg-slate-800 dark:shadow-slate-900 shadow-slate-500 hover:shadow-[#5651e5]/50 bg-gray-200 hover:scale-110 transition-sm text-[#1f2937] dark:text-[#ecf0f3] shadow-md hover:shadow-lg;
+  }
+  
+  .logo {
+    @apply cursor-pointer text-[#1f2937] dark:text-[#ecf0f3]
+  }
+  
+  .title {
+    @apply py-2 text-[#1f2937] dark:text-[#ecf0f3];
+  }
+
+  .rounded-div {
+    @apply border border-slate-200 dark:border-[#1c2736] shadow-lg hover:shadow-xl shadow-slate-400 dark:shadow-slate-900 hover:shadow-[#5651e5]/60 rounded-xl;
+  }
 }
 
-.accent {
-  @apply text-[#5651e5];
-}
+@layer utilities {
+  .accent {
+    @apply text-[#5651e5];
+  }
+  
+  .comment {
+    @apply text-emerald-500 dark:text-sky-500;
+  }
+  
+  .text {
+    @apply dark:text-[#afc7da] text-[#1f2937];
+  }
 
-.comment {
-  @apply text-emerald-500 dark:text-sky-500;
-}
+  .transition-sm {
+    @apply duration-150 ease-out;
+  }
 
-.source-button {
-  @apply rounded-full cursor-pointer dark:bg-slate-800 dark:shadow-slate-900 shadow-slate-500 hover:shadow-[#5651e5]/50 bg-gray-200 hover:scale-110 ease-in duration-150 text-[#1f2937] dark:text-[#ecf0f3] shadow-md hover:shadow-lg;
-}
+  .transition-md {
+    @apply duration-200 ease-out;
+  }
 
-.text {
-  @apply dark:text-[#afc7da] text-[#1f2937];
-}
-
-.title {
-  @apply py-2 text-[#1f2937] dark:text-[#ecf0f3];
-}
-
-.section {
-  @apply w-full lg:h-screen px-4 py-16;
-}
-
-.container {
-  @apply max-w-[1240px] w-full h-full mx-auto
-}
-
-.logo {
-  @apply cursor-pointer text-[#1f2937] dark:text-[#ecf0f3]
+  .transition-lg {
+    @apply duration-200 ease-out;
+  }
 }

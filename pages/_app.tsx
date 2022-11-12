@@ -1,8 +1,8 @@
-import "../styles/globals.css";
-import type { AppProps } from "next/app";
-import Navbar from "../components/Navbar";
-import { ThemeProvider } from "../contexts/ThemeProvider";
 import { getInitialTheme } from "../contexts/ThemeContext";
+import type { AppProps } from "next/app";
+import { ThemeProvider } from "../contexts/ThemeProvider";
+import Navbar from "../components/Navbar";
+import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (

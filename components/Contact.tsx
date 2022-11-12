@@ -1,20 +1,19 @@
 import { BsFillPersonLinesFill, BsTelegram } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub } from "react-icons/fa";
+import { Style } from "../models/models";
 import React from "react";
 import Image from "next/image";
 
-type Styles = { [key: string]: string };
-
-const styles: Styles = { 
+const styles: Style = { 
   section: "section",
   container: "container",
   sectionTitle: "section-title",
   title: "title",
   content: "grid lg:grid-cols-5 gap-8",
-  leftSide: "col-span-3 lg:col-span-2 w-full h-full rounded-xl p-4 shadow-xl dark:shadow-slate-900 shadow-gray-500 border border-slate-200 dark:border-[#1c2736]",
+  leftSide: "col-span-3 lg:col-span-2 w-full h-full p-4 rounded-div shadow-slate-400 hover:shadow-slate-400 dark:hover:shadow-slate-900 shadow-xl rounded-2xl",
   leftSideColumn: "flex flex-col gap-8 md:gap-0 justify-between lg:p-4 h-full",
-  imageContainer: "rounded-xl relative hover:scale-105 ease-in duration-200",
+  imageContainer: "rounded-xl relative hover:scale-[1.02] transition-md",
   image: "rounded-xl",
   name: "title",
   job: "comment",
@@ -22,7 +21,7 @@ const styles: Styles = {
   sourcesTitle: "uppercase pt-2 tracking-widest dark:text-[#ecf0f3] text-[#1f2937] font-medium",
   sourcesContainer: "flex items-center justify-between py-4",
   source: "p-4 dark:shadow-slate-900 source-button",
-  rightSide: "col-span-3 w-full h-auto shadow-xl dark:shadow-slate-900 shadow-gray-500 rounded-xl p-4 border border-slate-200 dark:border-[#1c2736]",
+  rightSide: "col-span-3 w-full h-auto p-4 rounded-div shadow-slate-400 hover:shadow-slate-400 dark:hover:shadow-slate-900 shadow-xl rounded-2xl",
   rightSideContaier: "p-4",
   comment: "comment",
   inputsContainer: "grid md:grid-cols-2 gap-4 w-full py-2",
@@ -31,7 +30,7 @@ const styles: Styles = {
   emailInputWrapper: "flex flex-col py-2",
   longInputWrapper: "flex flex-col py-2",
   textArea: "min-h-[120px]",
-  button: "w-full p-4 text-gray-100 mt-4 dark:shadow-slate-800 hover:scale-[1.01] hover:shadow-[#5651e5]/20 duration-200 ease-in",
+  button: "w-full p-4 text-gray-100 mt-4 dark:shadow-slate-800 hover:scale-[1.01] hover:shadow-[#5651e5]/20 transition-md",
 }
 
 const Contact = () => {
