@@ -14,7 +14,7 @@ interface ProjectSliderProps {
 const styles: Style = {
   container: "h-[400px] lg:h-[600px] p-3 rounded-div shadow-xl shadow-slate-400 rounded-3xl hover:scale-[1.01] transition-lg",
   content: "h-full relative group",
-  image: "rounded-3xl select-none",
+  image: "rounded-3xl select-none object-cover",
   panel: "absolute scale-[1.001] bg-gradient-to-t w-full flex flex-col items-center justify-end pb-[90px] sm:pb-[80px] lg:pb-[150px] h-full rounded-3xl from-black to-transparent top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2",
   panelTitle: "text-xl sm:text-2xl py-2 sm:py-0 text-white tracking-wider text-center",
   panelMainTechs: "hidden sm:block pb-4 pt-2 text-white text-center",
@@ -55,8 +55,7 @@ const ProjectSlider = ({ projects }: ProjectSliderProps) => {
             <Image
               src={project.imageSource}
               className={styles.image}
-              layout='fill'
-              objectFit="cover"
+              fill
               draggable="false"
               alt="/"
             />

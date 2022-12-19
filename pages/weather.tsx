@@ -6,7 +6,7 @@ import Image from "next/image";
 const styles: Style = {
   section: "w-full",
   imageContainer: "w-screen h-[30vh] lg:h-[40vh] relative",
-  image: "absolute z-1",
+  image: "absolute z-1 object-cover",
   imageOverlay: "absolute left-0 top-0 w-full h-[30vh] lg:h-[40vh] bg-black/80",
   textContainer: "absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] -translate-x-1/2 z-10 p-2 text-white",
   container: "max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8",
@@ -29,8 +29,7 @@ const weather: FC = () => {
         <Image
           className={styles.image}
           src={"https://i.ibb.co/3cCNsHZ/weather-application-Page.webp"}
-          layout="fill"
-          objectFit="cover"
+          fill
           alt="/"
           priority
         />

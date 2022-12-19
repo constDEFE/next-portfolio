@@ -1,0 +1,42 @@
+[
+  { 
+    "imageSource": "https://i.ibb.co/w6gVJW9/html.webp", 
+    "title": "HTML" 
+  },
+  { 
+    "imageSource": "https://i.ibb.co/6nNrzfJ/css.webp", 
+    "title": "CSS" 
+  },
+  { 
+    "imageSource": "https://i.ibb.co/4tKLDWh/Sass-Logo-Seal-Black.webp", 
+    "title": "SCSS/SASS" 
+  },
+  { 
+    "imageSource": "https://i.ibb.co/w4WHh7F/tailwind.webp", 
+    "title": "Tailwind CSS" 
+  },
+  { 
+    "imageSource": "https://i.ibb.co/tLxWFpq/javascript.webp", 
+    "title": "JavaScript" 
+  },
+  { 
+    "imageSource": "https://i.ibb.co/899pJc7/typescript.webp", 
+    "title": "TypeScript" 
+  },
+  { 
+    "imageSource": "https://i.ibb.co/M7h195L/react.webp", 
+    "title": "ReactJS" 
+  },
+  { 
+    "imageSource": "https://i.ibb.co/jTY0ffg/NextJS.webp", 
+    "title": "NextJS" 
+  },
+  { 
+    "imageSource": "https://i.ibb.co/f1hJc3Q/redux.webp", 
+    "title": "Redux Toolkit" 
+  },
+  { 
+    "imageSource": "https://i.ibb.co/h2xmzM0/firebase.webp", 
+    "title": "Firebase" 
+  }
+]

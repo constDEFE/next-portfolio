@@ -1,0 +1,32 @@
+[
+  {
+    "imageSource": "https://i.ibb.co/NFzpD9z/Food-Delivery-Page.webp",
+    "title": "Food Delivery",
+    "url": "food-delivery",
+    "mainStack": ["NextJS", "Redux Toolkit", "Firebase"]
+  },
+  {
+    "imageSource": "https://i.ibb.co/Bnfjc6S/cryptocurrency.webp",
+    "title": "Cryptocurrency Ranking",
+    "url": "cryptocurrency",
+    "mainStack": ["ReactJS", "Firebase", "CoinGecko API"]
+  },
+  {
+    "imageSource": "https://i.ibb.co/3cCNsHZ/weather-application-Page.webp",
+    "title": "Weather Forecast",
+    "url": "weather",
+    "mainStack": ["ReactJS", "OpenWeather API", "Rapid API"]
+  },
+  {
+    "imageSource": "https://i.ibb.co/kctwkqr/BestEats.webp",
+    "title": "BestEats",
+    "url": "besteats",
+    "mainStack": ["HTML", "Tailwind CSS"]
+  },
+  {
+    "imageSource": "https://i.ibb.co/m8bSyN1/Messenger.webp",
+    "title": "Messenger",
+    "url": "messenger",
+    "mainStack": ["ReactJS", "Redux Toolkit", "Firebase"]
+  }
+]

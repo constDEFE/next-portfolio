@@ -22,52 +22,50 @@ const styles: Style = {
   tech: "hover:scale-105 transition-sm font-medium cursor-default"
 }
 
-const messenger: FC = () => {
+const foodDelivery: FC = () => {
   return (
     <section className={styles.section}>
       <div className={styles.imageContainer}>
         <Image 
           className={styles.image} 
-          src="https://i.ibb.co/YZ8505g/Messenger-Page.webp" 
+          src="https://i.ibb.co/NFzpD9z/Food-Delivery-Page.webp" 
           fill
           alt="/" 
           priority
         />
         <div className={styles.imageOverlay} />
-
         <div className={styles.textContainer}>
-          <h2>Messenger</h2>
-          <h3>ReactJS | Redux Toolkit | Firebase</h3>
+          <h2>Food Delivery</h2>
+          <h3>NextJS | Redux Toolkit | Firebase</h3>
         </div>
       </div>
-
       <div className={styles.container}>
         <div className={styles.overviewContainer}>
           <p className={styles.sectionTitle}>Project</p>
           <h2 className={styles.title}>Overview</h2>
           <p className={styles.paragraph}>
-            {"This project designed only for Desktop devices.\n"}
+            {"This project includes Responsive design.\n"}
+            {"It was built using TypeScript, Next.js, Redux Toolkit, SCSS, Google Firebase and NextAuth.\n"}
           </p>
           <p className={styles.paragraph}>
             {"Project includes:\n"}
-            {"Registration Page. [ Email | Login | Password ]\n"}
-            {"Login Page. [ Email | Password ]\n"}
-            {"Profile Page.\n"}
-            {"Chat Page. [ Only friends are shown ]\n"}
-            {"Ability to change their profile image.\n"}
-            {"Ability to send images in chat.\n"}
-            {"Ability search other users. [ Login ]\n"}
-            {"Ability to send, accept and decline friend requests.\n"}
+            {"Home page.\n"}
+            {"Foods page.\n"}
+            {"Unique page for each item.\n"}
+            {"Cart page.\n"}
+            {"Account/Login page made with Google Auth.\n"}
+            {"Checkout page.\n"}
+            {"Ability to add reviews on items.\n"}
           </p>
           <div className={styles.buttonsContainer}>
-            <a href='https://react-messenger-theta.vercel.app/' 
+            <a href='https://next-food-delivery-gamma.vercel.app/' 
               target="_blank" 
               rel="noreferrer" 
               className={styles.button}
               >
                 Demo
               </a>
-            <a href='https://github.com/constDEFE/react-messenger' 
+            <a href='https://github.com/constDEFE/next-food-delivery' 
               target='_blank' 
               rel="noreferrer" 
               className={styles.button}
@@ -83,22 +81,22 @@ const messenger: FC = () => {
               <FaAngleRight /> <p className={styles.tech}>HTML</p>
             </li>
             <li className={styles.techContainer}>
-              <FaAngleRight /> <p className={styles.tech}>CSS</p>
-            </li>
-            <li className={styles.techContainer}>
-              <FaAngleRight /> <p className={styles.tech}>Tailwind CSS</p>
+              <FaAngleRight /> <p className={styles.tech}>SCSS</p>
             </li>
             <li className={styles.techContainer}>
               <FaAngleRight /> <p className={styles.tech}>TypeScript</p>
             </li>
             <li className={styles.techContainer}>
-              <FaAngleRight /> <p className={styles.tech}>ReactJS</p>
+              <FaAngleRight /> <p className={styles.tech}>NextJS</p>
             </li>
             <li className={styles.techContainer}>
               <FaAngleRight /> <p className={styles.tech}>Redux Toolkit</p>
             </li>
             <li className={styles.techContainer}>
               <FaAngleRight /> <p className={styles.tech}>Firebase</p>
+            </li>
+            <li className={styles.techContainer}>
+              <FaAngleRight /> <p className={styles.tech}>NextAuth</p>
             </li>
           </ul>
         </div>
@@ -107,4 +105,4 @@ const messenger: FC = () => {
   )
 }
 
-export default messenger
+export default foodDelivery

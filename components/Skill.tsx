@@ -11,6 +11,7 @@ const styles: Style = {
   container: "p-6 rounded-div hover:scale-[1.02] transition-md",
   content: "grid grid-cols-2 gap-4 justify-center items-center",
   imageContainer: "relative m-auto flex",
+  image: "w-auto h-[64px]",
   titleContainer: "flex flex-col items-center justify-center",
   title: "text-[#1f2937] dark:text-[#ecf0f3]",
 };
@@ -21,10 +22,11 @@ const Skill = ({ image, title }: SkillProps) => {
       <div className={styles.content}>
         <div className={styles.imageContainer}>
           <Image
+            className={styles.image}
             draggable="false"
             src={image}
-            width="64px"
-            height="64px"
+            width={128}
+            height={64}
             alt="/"
           />
         </div>
